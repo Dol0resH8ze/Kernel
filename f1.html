@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>F1 Race Analysis</title>
-<link rel="stylesheet" href="C:\Users\yelai\OneDrive\Bureau\F1-project\static\style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<script src="main.js"></script>
 
 <style type ="text/css" >
    .footer{ 
@@ -26,27 +25,27 @@
 
     <select id ="raceSelect">
      <option value="">Choose the desired 5 recent grand prix</option>
-     <option value="Singapore">Singapore GP</option>
-     <option value="Azerbaijan">Azerbaijan GP</option>
-     <option value="Italy">Italian GP</option>
-     <option value="Netherlands">Dutch GP</option>
-     <option value="Hungary">Hungarian GP</option>
+     <option value="18">Singapore GP</option>
+ <option value="17">Azerbaijan GP</option>
+ <option value="16">Italian GP</option>
+ <option value="15">Dutch GP</option>
+ <option value="14">Hungarian GP</option>
     </select>
 
-     <button id="runbtn">analyze race</button>
+     <button id="runBtn">analyze race</button>
 
      <div id="loading" class="hidden">loading race data</div>
 
      <div id="result">
 
-    <img id="plot" src="" alt="Raxe graph will appear here">
+    <img id="plot" src="" alt="Race graph will appear here">
 
      </div>
 </div>
 
-<script src="C:\Users\yelai\OneDrive\Bureau\F1-project\static\script.js"></script>
 
 
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>
