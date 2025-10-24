@@ -1,0 +1,7 @@
+Flask
+matplotlib
+fastf1
+numpy
+socket
+io
+base64
